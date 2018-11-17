@@ -1,5 +1,4 @@
 let axios = require('axios')
-let _ = require('lodash')
 let backendUrl = 'http://localhost:8080/loanbroker/' // NOTE: THIS HAS TO BE CHANGED...
 let ctrl = {}
 
