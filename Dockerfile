@@ -13,6 +13,6 @@ RUN npm i --production
 # RUN npm install --only=production
 
 COPY . /frontend-app
-
+EXPOSE 3000
 # Bundle app source
 CMD ["npm", "start" ]
