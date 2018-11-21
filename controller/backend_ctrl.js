@@ -8,7 +8,8 @@ ctrl.sendLoanRequest = async function(loan){
     loan['loanDuration'] = parseInt(loan.loanDuration)
     console.log(`LOAN REQUEST TO SEND: ${JSON.stringify(loan)}`);
     let res = await axios.post(`${backendUrl}`, loan)
-    console.log(`RESULT: ${JSON.stringify(res, null, 2)}`);
+    // console.log(`RESULT: ${JSON.stringify(res, null, 2)}`);
+    console.log(res);
     return res
   }catch(e){
     console.log(`loanRequest() ERROR: ${e.toString()}`);
@@ -22,8 +23,8 @@ ctrl.sendLoanRequest = async function(loan){
 ctrl.getLoanReply = async function(ssn){
   try{
     let res = await axios.get(`${backendUrl}/${ssn}`)
-    console.log(`RESULT: ${JSON.stringify(res, null, 2)}`);
-    return res
+    console.log(`RESULT: ${JSON.stringify(res.data)}`);
+    return res.data
   }catch(e){
     console.log(`loanRequest() ERROR: ${e.toString()}`);
     return {

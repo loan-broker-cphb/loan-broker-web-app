@@ -1,19 +1,12 @@
 <h4>BEST QUOTE</h4>
 <h3>SSN: {{reply.ssn}}</h3>
 <hr>
-<ul class="list-group">
-  {{#each reply.banks}}
-    <li class="list-group-item">
-      <dl class="row">
-        <dt class="col-sm-3">Bank Name:</dt>
-        <dd class="col-sm-9">{{name}}</dd>
-        <dt class="col-sm-3">Interest Rate:</dt>
-        <dd class="col-sm-9">{{interestRate}}</dd>
-      </dl>
-      <a href="/apply/{{name}}" class="btn btn-info btn-sm" style="float: right;" disabled> Apply </a>
-      <br><br>
-    </li>
 
-  {{/each}}
-
-</ul>
+<dl class="row">
+  <dt class="col-sm-3">Bank Name:</dt>
+  <dd class="col-sm-9">{{reply.bank}}</dd>
+  <dt class="col-sm-3">Interest Rate:</dt>
+  <dd class="col-sm-9">{{reply.interestRate}}</dd>
+</dl>
+<a href="/apply/{{reply.bank}}" class="btn btn-info btn-sm" style="float: right;" disabled> Apply </a>
+<br><br>
