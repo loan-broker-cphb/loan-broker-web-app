@@ -7,7 +7,7 @@ ctrl.sendLoanRequest = async function(loan){
     loan['loanAmount'] = parseFloat(loan.loanAmount)
     loan['loanDuration'] = parseInt(loan.loanDuration)
     console.log(`LOAN REQUEST TO SEND: ${JSON.stringify(loan)}`);
-    let res = await axios.post(`${backendUrl}loanRequest`, loan)
+    let res = await axios.post(`${backendUrl}`, loan)
     console.log(`RESULT: ${JSON.stringify(res, null, 2)}`);
     return res
   }catch(e){
