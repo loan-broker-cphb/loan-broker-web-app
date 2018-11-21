@@ -1,5 +1,5 @@
 let axios = require('axios')
-let backendUrl = 'http://localhost:8081/quote'
+let backendUrl = 'http://loan-broker-api:8081/quote'
 let ctrl = {}
 
 ctrl.sendLoanRequest = async function(loan){
