@@ -9,13 +9,14 @@ ctrl.sendLoanRequest = async function(loan){
     console.log(`LOAN REQUEST TO SEND: ${JSON.stringify(loan)}`);
     let res = await axios.post(`${backendUrl}`, loan)
     // console.log(`RESULT: ${JSON.stringify(res, null, 2)}`);
+    res['statusCode'] = res.status
     console.log(res);
     return res
   }catch(e){
-    console.log(`loanRequest() ERROR: ${e.toString()}`);
+    console.log(`sendLoanRequest() ERROR: ${e.toString()}`);
     return {
       'statusCode': 400,
-      'errorMessage': e.toString()
+      'errorMessage': `sendLoanRequest() ERROR: ${e.toString()}`
     }
   }
 }
@@ -23,13 +24,14 @@ ctrl.sendLoanRequest = async function(loan){
 ctrl.getLoanReply = async function(ssn){
   try{
     let res = await axios.get(`${backendUrl}/${ssn}`)
-    console.log(`RESULT: ${JSON.stringify(res.data)}`);
-    return res.data
+    // console.log(`RESULT: ${JSON.stringify(res.data)}`);
+    res['statusCode'] = res.status
+    return res
   }catch(e){
-    console.log(`loanRequest() ERROR: ${e.toString()}`);
+    console.log(`getLoanReply() ERROR: ${e.toString()}`);
     return {
       'statusCode': 400,
-      'errorMessage': e.toString()
+      'errorMessage':`getLoanReply() ERROR: ${e.toString()}`
     }
   }
 }

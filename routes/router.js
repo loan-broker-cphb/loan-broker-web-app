@@ -15,21 +15,32 @@ router.get('/loanrequest', function(req, res, next) {
 router.post('/loanrequest', async function(req, res, next) {
   let loan = req.body
   let result = await ctrl.sendLoanRequest(loan)
-  // if (result.statusCode == 200) {
+  if (result.statusCode == 200) {
     res.render('index', {
       'message': `The loan request from "ssn: ${req.body.ssn}"" has been processed. See "Loan Result" for status.`,
       'ssn': req.body.ssn
     })
-  // }
+  } else if (result.statusCode == 400) {
+    res.render('error', {
+      'message': result.errorMessage
+    })
+  }
+
 });
 
 
 router.get('/loanreply/:ssn', async function(req, res, next) {
   let ssn = req.params.ssn
   let result = await ctrl.getLoanReply(ssn)
-  // if (result.statusCode == 200) {
-    res.render('loanreply', {'reply': result})
-  // }
+  if (result.statusCode == 200) {
+    res.render('loanreply', {
+      'reply': result.data
+    })
+  } else if (result.statusCode == 400) {
+    res.render('error', {
+      'message': result.errorMessage
+    })
+  }
 });
 
 
