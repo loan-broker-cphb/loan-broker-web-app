@@ -3,11 +3,11 @@
 
 _**TO RUN:**  `npm start` or `nodemon`_
 
-### HOME:
-![image](https://user-images.githubusercontent.com/16150075/48804986-64bd6f80-ed16-11e8-9004-60c1f268e317.png)
-
 ### Loan Request Form:
-![image](https://user-images.githubusercontent.com/16150075/48804569-4440e580-ed15-11e8-8d40-b7e38c5ca641.png)
+![image](https://user-images.githubusercontent.com/16150075/48816212-98fa5580-ed41-11e8-97b5-e5610e910f19.png)
+
+### HOME/After post:
+![image](https://user-images.githubusercontent.com/16150075/48816185-76683c80-ed41-11e8-8298-90356229582a.png)
 
 ### Best Quote/Loan Response:
-![image](https://user-images.githubusercontent.com/16150075/48804511-1eb3dc00-ed15-11e8-9fd9-e19020db0e11.png)
+![image](https://user-images.githubusercontent.com/16150075/48816252-c0e9b900-ed41-11e8-8080-8c5e2e8a3fbc.png)
