@@ -1,0 +1,17 @@
+{{#if message}}
+  <div class="alert alert-danger">
+    <strong>ERROR:</strong> {{message}}.
+  </div>
+{{/if}}
+
+<form method="post" action="/search/loanreply">
+  <h3>Find Loan Result:</h3><br>
+  <div class="form-group">
+    <div class="form-group row">
+      <div class="col-xs-5">
+        <label for="ssn" class="col-2 col-form-label">SSN</label>
+        <input class="form-control" type="text" placeholder="ddmmyy-xxxx" name="ssn" required>
+      </div>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Search</button>
