@@ -4,10 +4,13 @@
 _**TO RUN:**  `npm start` or `nodemon`_
 
 ### Loan Request Form:
-![image](https://user-images.githubusercontent.com/16150075/48816212-98fa5580-ed41-11e8-97b5-e5610e910f19.png)
+<img src="https://user-images.githubusercontent.com/16150075/48816212-98fa5580-ed41-11e8-97b5-e5610e910f19.png" alt="drawing" width="400"/>
 
 ### HOME/After post:
-![image](https://user-images.githubusercontent.com/16150075/48816185-76683c80-ed41-11e8-8298-90356229582a.png)
+<img src="https://user-images.githubusercontent.com/16150075/48922950-87808d00-eeaa-11e8-8007-7eb639130033.png" alt="drawing" width="400"/>
 
 ### Best Quote/Loan Response:
-![image](https://user-images.githubusercontent.com/16150075/48816252-c0e9b900-ed41-11e8-8080-8c5e2e8a3fbc.png)
+<img src="https://user-images.githubusercontent.com/16150075/48816252-c0e9b900-ed41-11e8-8080-8c5e2e8a3fbc.png" alt="drawing" width="400"/>
+
+### Find Loan Reply by SSN
+<img src="https://user-images.githubusercontent.com/16150075/48922920-4daf8680-eeaa-11e8-9fef-b300bd920636.png" alt="drawing" width="400"/>
